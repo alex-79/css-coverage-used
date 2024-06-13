@@ -4,9 +4,6 @@ const fs = require('fs');
 const mobile = puppeteer.KnownDevices['Moto G4'];
 
 const credentials = require('./credentials');
-const username_selector = '#email';
-const password_selector = '#pass';
-const button_selector = '#send2';
 
 const urls = require('./urls');
 
@@ -34,11 +31,11 @@ async function collectCss(device) {
     const host = url.host;
 
     await page.goto(credentials.url);
-    await page.click(username_selector);
+    await page.click(credentials.username_selector);
     await page.keyboard.type(credentials.username);
-    await page.click(password_selector);
+    await page.click(credentials.password_selector);
     await page.keyboard.type(credentials.password);
-    await page.click(button_selector);
+    await page.click(credentials.button_selector);
 
     for (let key of Object.keys(urls)) {
         try {

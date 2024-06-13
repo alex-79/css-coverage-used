@@ -3,5 +3,8 @@ module.exports = {
     category: 'https://demo.local/category',
     product: 'https://demo.local/product',
     brand: 'https://demo.local/brand',
-    blog: 'https://demo.local/blog'
+    blog: 'https://demo.local/blog',
+    cms: 'https://demo.local/cms',
+    search: 'https://demo.local/catalogsearch/result/?q=test',
+    wishlist: 'https://demo.local/wishlist'
 }
