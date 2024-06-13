@@ -1,0 +1,7 @@
+module.exports = {
+    home: 'https://demo.local',
+    category: 'https://demo.local/category',
+    product: 'https://demo.local/product',
+    brand: 'https://demo.local/brand',
+    blog: 'https://demo.local/blog'
+}
